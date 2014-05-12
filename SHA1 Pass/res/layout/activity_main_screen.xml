@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/sentenceField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/sentence"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/wordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sentenceField"
+        android:ems="10"
+        android:hint="@string/word"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/peek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wordField"
+        android:layout_alignBottom="@+id/wordField"
+        android:layout_toRightOf="@+id/wordField"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/viewCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wordField"
+        android:text="@string/view" />
+
+    <CheckBox
+        android:id="@+id/secureCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viewCheckBox"
+        android:layout_alignBottom="@+id/viewCheckBox"
+        android:layout_toRightOf="@+id/viewCheckBox"
+        android:text="@string/secure" />
+
+    <CheckBox
+        android:id="@+id/hmacCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewCheckBox"
+        android:text="@string/hmac" />
+
+    <CheckBox
+        android:id="@+id/complexCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hmacCheckBox"
+        android:layout_alignBottom="@+id/hmacCheckBox"
+        android:layout_toRightOf="@+id/hmacCheckBox"
+        android:text="@string/complex" />
+
+    <Button
+        android:id="@+id/hex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hmacCheckBox"
+        android:text="@string/hex" />
+
+    <Button
+        android:id="@+id/hexHalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hex"
+        android:layout_alignBottom="@+id/hex"
+        android:layout_toRightOf="@+id/hex"
+        android:text="@string/hexHalf" />
+
+    <Button
+        android:id="@+id/b64Half"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b64"
+        android:layout_alignBottom="@+id/b64"
+        android:layout_toRightOf="@+id/b64"
+        android:text="@string/b64Half" />
+
+    <Button
+        android:id="@+id/b64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hex"
+        android:layout_toLeftOf="@+id/secureCheckBox"
+        android:text="@string/b64" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b64"
+        android:layout_below="@+id/b64Half"
+        android:text="@string/about" />
+
+</RelativeLayout>

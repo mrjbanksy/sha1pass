@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SHA1 Pass</string>
+    <string name="sentence">Sentence</string>
+    <string name="word">Word</string>
+    <string name="view">View</string>
+    <string name="secure">Secure</string>
+    <string name="hmac">HMAC</string>
+    <string name="complex">Complex</string>
+    <string name="hex">Hex</string>
+    <string name="hexHalf">Hex Half</string>
+    <string name="b64">B64</string>
+    <string name="b64Half">B64 Half</string>
+    <string name="about">About</string>
+
+</resources>
