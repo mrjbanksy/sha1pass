@@ -147,7 +147,6 @@ public class MainScreen extends Activity implements View.OnClickListener {
 				peek.setText("Peek: " + hexResult.substring(0, 4));
 				Toast.makeText(getApplicationContext(), "Hex password copied.",
 						Toast.LENGTH_SHORT).show();
-				System.out.println(hexResult);
 			}
 
 			/*
@@ -183,7 +182,6 @@ public class MainScreen extends Activity implements View.OnClickListener {
 				peek.setText("Peek: " + hexHalfResult.substring(0, 4));
 				Toast.makeText(getApplicationContext(),
 						"Hex half password copied.", Toast.LENGTH_SHORT).show();
-				System.out.println(hexHalfResult);
 			}
 
 			/*
@@ -220,7 +218,6 @@ public class MainScreen extends Activity implements View.OnClickListener {
 				peek.setText("Peek: " + b64Result.substring(0, 4));
 				Toast.makeText(getApplicationContext(), "B64 password copied.",
 						Toast.LENGTH_SHORT).show();
-				System.out.println(b64Result);
 			}
 
 			/*
@@ -257,7 +254,6 @@ public class MainScreen extends Activity implements View.OnClickListener {
 				peek.setText("Peek: " + b64HalfResult.substring(0, 4));
 				Toast.makeText(getApplicationContext(),
 						"B64 half password copied.", Toast.LENGTH_SHORT).show();
-				System.out.println(b64HalfResult);
 			}
 
 			/*
